@@ -8,9 +8,9 @@ Image Captioning 기술은 이미지 데이터에 Caption, 즉 그 이미지에 
 기반으로 구성되어 있으며, 한국어를 기반으로 한 Image Captioning 연구는 아직 미진한 상황이다. 이에 한국어
 기반 Image Captioning 모델을 구현해보고 이를 제시한다. 
 
-이 리포지토리는 'Show, Attend and Tell' 논문(https://arxiv.org/pdf/1502.03044.pdf) 을 기반으로 한다. 본 논문에서는 이미지를 Encoding하고 Feature를 추출하는 과정에서 CNN을, 그리고 Encoding한 이미지를 단어 단위로 추출해 문장을 형성하는 과정에서 RNN을 사용하게 된다. 가장 먼저 (1)Inception V3과 LSTM으로 구성된 모델(https://www.tensorflow.org/tutorials/text/image_captioning)과, (2)ResNet-101과 LSTM으로 구성된 모델, (2)ResNet-101과 KoBert로 이루어진 모델 총 3가지로 실험해보았다. 
+이 리포지토리는 'Show, Attend and Tell' 논문(https://arxiv.org/pdf/1502.03044.pdf) 을 기반으로 한다. 본 논문에서는 이미지를 Encoding하고 Feature를 추출하는 과정에서 CNN을, 그리고 Encoding한 이미지를 단어 단위로 추출해 문장을 형성하는 과정에서 RNN을 사용하게 된다. 가장 먼저 (1)Inception V3과 LSTM으로 구성된 모델(https://www.tensorflow.org/tutorials/text/image_captioning) 과, (2)ResNet-101과 LSTM으로 구성된 모델, (2)ResNet-101과 KoBert로 이루어진 모델 총 3가지로 실험해보았다. 
 
-DataSet으로는 Microsoft COCO 2014 Image Dataset(https://cocodataset.org/#home)을 사용했고, caption file로는 AI Hub에서 제공한 한국어 기계번역 caption file(https://aihub.or.kr/keti_data_board/visual_intelligence)을 일부 수정해 (Slicing and Editing) 사용했다. 
+DataSet으로는 Microsoft COCO 2014 Image Dataset(https://cocodataset.org/#home) 을  사용했고, caption file로는 AI Hub에서 제공한 한국어 기계번역 caption  file(https://aihub.or.kr/keti_data_board/visual_intelligence) 을 일부 수정해 (Slicing and Editing) 사용했다. 
 
 ## Instructions to run the Code 
 ### InceptionV3 & Resnet-101 + LSTM Model
